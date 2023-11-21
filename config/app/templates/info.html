@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<body class="{{team_info.Name}}">
+<a href = "/"><button class = "button">back</button></a>
+<div class= "{{team_info.Name}}info"><center><h1>{{ team_info.Name }}</h1>
+<h2>{{ team_info.Description }}</h2></center>
+{% for member in team_info.Team_Members %}
+<center><p>{{ member }}</p></center>
+</body>
+{% endfor %}
+</div>
+{% endblock content %}

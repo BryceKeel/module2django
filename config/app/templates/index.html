@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<center><header><h1>Leadership Teams</h1></header></center>
+    <body class = homepage> 
+        {% for team in teams %}
+        <br><center><br><a href="teams/{{team}}"><button class="button">{{team}}</button></a></br></center><br>
+        {% endfor %}    
+    </body>
+{% endblock content %}
